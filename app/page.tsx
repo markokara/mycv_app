@@ -1,22 +1,34 @@
 import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/reveal";
 
-const profileHighlights = [
+const expertiseAreas = [
   {
-    title: "20 yıllık tecrübe",
+    title: "Yapay Zeka Asistanları",
     description:
-      "Veri analitiği, CRM, ticari pazarlama, misafir deneyimi ve dijital dönüşüm tarafında farklı sektörlerde çalıştım.",
+      "WhatsApp, Instagram, web ve CRM temas noktalarında çalışan; bilgiye erişen, cevaplayan ve yönlendiren AI asistan kurguları geliştiriyorum.",
   },
   {
-    title: "AIHotelsTech kurucusu",
+    title: "CRM Entegrasyonları",
     description:
-      "AIHotelsTech ile AI mimarisi, agentic sistemler, CRM otomasyonları ve veri odaklı deneyim kurguları geliştiriyorum.",
+      "HubSpot merkezli veri akışları, lead yönetimi, anket otomasyonları ve temas takibini sistematik hale getiren entegrasyonlar kuruyorum.",
   },
   {
-    title: "AI architect & engineer",
+    title: "Pazarlama ve Satış Entegrasyonları",
     description:
-      "Strateji kurabilen, sistemi tasarlayan, entegrasyonu yapan ve üretime taşıyan taraftayım.",
+      "Pazarlama, satış ve müşteri deneyimi verilerini aynı çerçevede ele alarak daha ölçülebilir ve daha hızlı aksiyon alınabilen yapılar tasarlıyorum.",
   },
+  {
+    title: "Akıllı Süreç Yönetimi",
+    description:
+      "Tekrarlayan iş akışlarını otomasyona devreden, veriyle beslenen ve kurum içinde görünür bir operasyon mantığı oluşturan sistemler kuruyorum.",
+  },
+];
+
+const collaborationPoints = [
+  "AI danışmanlığı ve ihtiyaç analizi",
+  "n8n / HubSpot mimari kurulumu",
+  "Agentic RAG ve LLM implementation",
+  "Misafir deneyimi ve iletişim otomasyonu",
 ];
 
 const experienceItems = [
@@ -25,67 +37,28 @@ const experienceItems = [
     role: "Founder & AI Architect",
     company: "AIHotelsTech",
     description:
-      "AI destekli misafir deneyimi, CRM otomasyonu, Agentic RAG ve operasyonel veri ürünleri geliştiriyorum.",
+      "AI destekli misafir deneyimi, CRM otomasyonu, Agentic RAG ve operasyonel veri ürünleri geliştiriyorum. Özellikle turizm ve deneyim odaklı yapılarda AI'ın doğrudan sürecin içine yerleşmesine odaklanıyorum.",
   },
   {
     period: "2024 - Bugün",
     role: "CRM & Dijital Dönüşüm Lideri",
     company: "Long Beach Resorts",
     description:
-      "CRM süreçleri, otomasyon altyapısı, AI asistan kurguları ve dijital iş akışları üzerine danışmanlık veriyorum.",
+      "CRM süreçleri, otomasyon altyapısı, AI asistan kurguları ve dijital iş akışları üzerine danışmanlık veriyorum. Veri akışı, segmentasyon ve iletişim mimarisi tarafını birlikte ele alıyorum.",
   },
   {
     period: "2021 - 2024",
     role: "CRM & Misafir Deneyimi Müdürü",
     company: "AKKA Hotels",
     description:
-      "HubSpot, veri tekilleştirme, anket otomasyonları, omnichannel iletişim ve deneyim haritalama projelerini yönettim.",
+      "HubSpot, veri tekilleştirme, anket otomasyonları, omnichannel iletişim ve deneyim haritalama projelerini yönettim. Misafir deneyimini veriyle okuyup sürece çeviren yapılar kurdum.",
   },
   {
     period: "2012 - 2021",
     role: "Satış Analitiği & Ticari Pazarlama",
     company: "Levent Kimya",
     description:
-      "Veri, forecast, ticari pazarlama ve karar destek sistemleri tarafında analitik bakışı iş sonuçlarına bağladım.",
-  },
-];
-
-const proofCards = [
-  {
-    title: "Maris AI Asistanı",
-    subtitle: "WhatsApp & Instagram çoklu ajan sistemi",
-    description:
-      "Çok kanallı talepleri yöneten, cevaplayan ve operasyon akışlarına bağlanan otonom AI asistan kurgusu.",
-  },
-  {
-    title: "AI Smart Map",
-    subtitle: "Navigasyon ve keşif uygulaması",
-    description:
-      "Kullanıcıyı doğru deneyime, lokasyona ve bilgiye yönlendiren dijital keşif ürünü.",
-  },
-  {
-    title: "Dinamik Veri Pipeline",
-    subtitle: "Power BI Data Lakehouse & ETL",
-    description:
-      "Farklı kaynaklardaki veriyi birleştirip izlenebilir, raporlanabilir ve karar alınabilir yapıya taşıyan analitik omurga.",
-  },
-];
-
-const workModels = [
-  {
-    title: "AI danışmanlığı",
-    description:
-      "İhtiyaç analizi, yol haritası, önceliklendirme ve AI kullanım senaryoları tarafında stratejik destek verebilirim.",
-  },
-  {
-    title: "Mimari kurulum",
-    description:
-      "n8n, HubSpot, API, agentic akışlar, RAG ve veri katmanını doğrudan kurgulayıp kurabilirim.",
-  },
-  {
-    title: "Esnek çalışma modeli",
-    description:
-      "Danışman, proje bazlı çözüm ortağı veya dış kaynaklı AI partner modeliyle çalışabilirim.",
+      "Veri analitiği, forecast, kategori yönetimi, ticari pazarlama ve karar destek sistemleri tarafında çalıştım. Analitik bakışı iş sonuçlarıyla ve yönetsel kararlarla birleştirdim.",
   },
 ];
 
@@ -119,7 +92,7 @@ function SectionHeading({
   title: string;
 }) {
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-4xl">
       <p className="section-eyebrow">{eyebrow}</p>
       <h2 className="section-title">{title}</h2>
     </div>
@@ -136,8 +109,8 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 sm:px-8 lg:px-12">
         <Reveal className="surface-panel px-6 py-6 sm:px-8 sm:py-8 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.35fr_0.85fr]">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line-strong)] bg-white/80 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--accent-strong)] shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
+            <div className="relative z-[1] max-w-3xl">
+              <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line-strong)] bg-white/88 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--accent-strong)] shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
                 CRM & Digital Transformation | AI Strategy Architect
               </div>
 
@@ -148,13 +121,13 @@ export default function Page() {
               <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--text-soft)] sm:text-xl">
                 CRM, dijital dönüşüm, AI stratejisi, Agentic RAG ve LLM
                 implementation tarafında çalışan; problemi analiz edip sistemi
-                kurabilen bir AI architect ve AI engineer’ım.
+                kurgulayan ve hayata geçiren bir AI architect ve AI engineer’ım.
               </p>
 
               <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--text-muted)]">
-                20 yıllık veri, CRM, ticari süreç, pazarlama ve misafir deneyimi
-                tecrübemi bugün AIHotelsTech çatısı altında AI danışmanlığı,
-                mimari kurulum ve operasyonel otomasyon projelerine taşıyorum.
+                20 yıllık veri, CRM, pazarlama ve misafir deneyimi tecrübemi
+                bugün AIHotelsTech çatısı altında AI danışmanlığı, mimari kurulum
+                ve operasyonel otomasyon projelerine taşıyorum.
               </p>
 
               <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--text-subtle)]">
@@ -205,10 +178,10 @@ export default function Page() {
                 </h2>
               </div>
 
-              <div className="mt-6 space-y-3 text-sm leading-6 text-slate-300">
+              <div className="mt-6 space-y-3 text-sm leading-7 text-slate-200">
                 <p>
                   CRM, LLM, Agentic RAG, otomasyon, veri stratejisi ve misafir
-                  deneyimi ekseninde problem çözen AI danışmanı, mimarı ve
+                  deneyimi ekseninde çalışan bir AI danışmanı, AI mimarı ve AI
                   engineer.
                 </p>
                 <p>
@@ -252,17 +225,65 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
+        <Reveal className="proposal-card">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                eyebrow="Papatya Dental"
+                title="İş Birliği Çerçevesi"
+              />
+              <p className="section-copy mt-5">
+                Papatya Dental tarafında kurulabilecek yapı; AI destekli
+                iletişim, CRM entegrasyonları, bilgiye dayalı asistanlar ve
+                otomasyonla güçlenen operasyon katmanını birlikte ele alan bir iş
+                birliği modelidir.
+              </p>
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {collaborationPoints.map((item) => (
+                  <li key={item} className="collaboration-chip">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="illustration-card">
+              <Image
+                src="/ai-system.png"
+                alt="AI system diyagramı"
+                width={1200}
+                height={675}
+                className="section-illustration"
+              />
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
         <SectionHeading eyebrow="Profil" title="Uzmanlık Alanları" />
-        <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
-          {profileHighlights.map((item) => (
-            <StaggerItem key={item.title}>
-              <article className="info-card h-full">
-                <h3 className="card-title">{item.title}</h3>
-                <p className="card-copy">{item.description}</p>
-              </article>
-            </StaggerItem>
-          ))}
-        </Stagger>
+        <div className="mt-8 grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+          <Reveal className="illustration-card">
+            <Image
+              src="/ai-engineer.png"
+              alt="AI engineer diyagramı"
+              width={1343}
+              height={503}
+              className="section-illustration"
+            />
+          </Reveal>
+
+          <Stagger className="grid gap-5 sm:grid-cols-2">
+            {expertiseAreas.map((item) => (
+              <StaggerItem key={item.title}>
+                <article className="info-card h-full">
+                  <h3 className="card-title">{item.title}</h3>
+                  <p className="card-copy">{item.description}</p>
+                </article>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
@@ -281,44 +302,6 @@ export default function Page() {
                   </h3>
                   <p className="card-copy mt-3">{item.description}</p>
                 </div>
-              </article>
-            </StaggerItem>
-          ))}
-        </Stagger>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading eyebrow="Projeler" title="Seçilmiş İşler" />
-        <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
-          {proofCards.map((card) => (
-            <StaggerItem key={card.title}>
-              <article className="info-card h-full">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
-                  Proje
-                </p>
-                <h3 className="mt-3 font-display text-2xl font-semibold tracking-[-0.03em] text-[var(--text-strong)]">
-                  {card.title}
-                </h3>
-                <p className="mt-2 text-sm font-medium text-[var(--text-subtle)]">
-                  {card.subtitle}
-                </p>
-                <p className="mt-5 text-sm leading-7 text-[var(--text-soft)]">
-                  {card.description}
-                </p>
-              </article>
-            </StaggerItem>
-          ))}
-        </Stagger>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading eyebrow="Çalışma Modelleri" title="Çalışma Biçimleri" />
-        <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
-          {workModels.map((item) => (
-            <StaggerItem key={item.title}>
-              <article className="info-card h-full">
-                <h3 className="card-title">{item.title}</h3>
-                <p className="card-copy">{item.description}</p>
               </article>
             </StaggerItem>
           ))}
