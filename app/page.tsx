@@ -3,9 +3,9 @@ import { Reveal, Stagger, StaggerItem } from "@/components/reveal";
 
 const profileHighlights = [
   {
-    title: "20 yıllık iş tecrübesi",
+    title: "20 yıllık tecrübe",
     description:
-      "Veri analitiği, CRM, ticari pazarlama, müşteri deneyimi ve dijital dönüşüm tarafında farklı sektörlerde çalıştım.",
+      "Veri analitiği, CRM, ticari pazarlama, misafir deneyimi ve dijital dönüşüm tarafında farklı sektörlerde çalıştım.",
   },
   {
     title: "AIHotelsTech kurucusu",
@@ -13,9 +13,9 @@ const profileHighlights = [
       "AIHotelsTech ile AI mimarisi, agentic sistemler, CRM otomasyonları ve veri odaklı deneyim kurguları geliştiriyorum.",
   },
   {
-    title: "AI architect + AI engineer",
+    title: "AI architect & engineer",
     description:
-      "Strateji seviyesinde düşünebilen ama gerektiğinde sistemi kuran, entegrasyonu yapan ve üretime taşıyan taraftayım.",
+      "Strateji kurabilen, sistemi tasarlayan, entegrasyonu yapan ve üretime taşıyan taraftayım.",
   },
 ];
 
@@ -75,7 +75,7 @@ const workModels = [
   {
     title: "AI danışmanlığı",
     description:
-      "İhtiyaç analizi, yol haritası, AI kullanım senaryoları ve önceliklendirme tarafında stratejik destek verebilirim.",
+      "İhtiyaç analizi, yol haritası, önceliklendirme ve AI kullanım senaryoları tarafında stratejik destek verebilirim.",
   },
   {
     title: "Mimari kurulum",
@@ -92,7 +92,6 @@ const workModels = [
 const contactLinks = {
   whatsapp: "https://wa.me/905544315194",
   linkedin: "https://linkedin.com/in/murat-k-18086b99",
-  email: "mailto:markokara@hotmail.com",
   website: "https://aihotelstech.com",
 };
 
@@ -115,17 +114,14 @@ function ArrowUpRightIcon() {
 function SectionHeading({
   eyebrow,
   title,
-  description,
 }: {
   eyebrow: string;
   title: string;
-  description: string;
 }) {
   return (
     <div className="max-w-3xl">
       <p className="section-eyebrow">{eyebrow}</p>
       <h2 className="section-title">{title}</h2>
-      <p className="section-copy">{description}</p>
     </div>
   );
 }
@@ -142,22 +138,29 @@ export default function Page() {
           <div className="grid gap-8 lg:grid-cols-[1.35fr_0.85fr]">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line-strong)] bg-white/80 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--accent-strong)] shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
-                AI Solution Partner / AI Architect / AI Engineer
+                CRM & Digital Transformation | AI Strategy Architect
               </div>
+
               <h1 className="mt-6 font-display text-4xl font-semibold tracking-[-0.05em] text-[var(--text-strong)] sm:text-5xl lg:text-7xl">
                 Murat Kara
               </h1>
+
               <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--text-soft)] sm:text-xl">
-                Papatya Dental için; AI danışmanlığı, AI mimarisi ve operasyonel
-                otomasyon tarafında dışarıdan stratejik çözüm ortağı olarak değer
-                üretebilirim.
+                CRM, dijital dönüşüm, AI stratejisi, Agentic RAG ve LLM
+                implementation tarafında çalışan; problemi analiz edip sistemi
+                kurabilen bir AI architect ve AI engineer’ım.
               </p>
+
               <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--text-muted)]">
-                20 yıllık veri, CRM, ticari süreç ve dijital dönüşüm tecrübemi;
-                bugün AIHotelsTech çatısı altında AI architect ve AI engineer
-                bakışıyla birleştiriyorum. Bu sayfa bir klasik iş başvurusu değil;
-                kim olduğumu, ne ürettiğimi ve hangi çalışma modeliyle katkı
-                sağlayabileceğimi net anlatan kısa bir tanıtımdır.
+                20 yıllık veri, CRM, ticari süreç, pazarlama ve misafir deneyimi
+                tecrübemi bugün AIHotelsTech çatısı altında AI danışmanlığı,
+                mimari kurulum ve operasyonel otomasyon projelerine taşıyorum.
+              </p>
+
+              <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--text-subtle)]">
+                Data Strategy | Agentic RAG & LLM Implementation | Marketing |
+                Guest Experience | HubSpot | BI | Turquality | Founder of
+                AIHotelsTech
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -185,45 +188,60 @@ export default function Page() {
             <aside className="profile-panel">
               <div className="profile-photo-shell">
                 <Image
-                  src="/portrait-placeholder.svg"
-                  alt="Murat Kara portre alanı"
-                  width={260}
-                  height={260}
+                  src="/murat-kara.jpg"
+                  alt="Murat Kara"
+                  width={520}
+                  height={520}
                   className="profile-photo"
+                  sizes="(max-width: 640px) 184px, 220px"
                   priority
                 />
               </div>
 
               <div className="mt-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
-                  Profil
-                </p>
-                <h2 className="mt-2 font-display text-2xl font-semibold text-[var(--text-strong)]">
-                  Founder, AI danışmanı ve çözüm mimarı
+                <p className="profile-label">Profil</p>
+                <h2 className="mt-2 font-display text-2xl font-semibold text-white">
+                  Founder of AIHotelsTech
                 </h2>
               </div>
 
-              <div className="mt-6 space-y-3 text-sm leading-6 text-[var(--text-soft)]">
+              <div className="mt-6 space-y-3 text-sm leading-6 text-slate-300">
                 <p>
-                  AIHotelsTech kurucusuyum. CRM, LLM, Agentic RAG, otomasyon ve
-                  veri ürünleri ekseninde kurumlara çözüm geliştiriyorum.
+                  CRM, LLM, Agentic RAG, otomasyon, veri stratejisi ve misafir
+                  deneyimi ekseninde problem çözen AI danışmanı, mimarı ve
+                  engineer.
                 </p>
                 <p>
-                  Antalya merkezliyim. Danışman, proje bazlı partner veya esnek
-                  dış kaynak modeliyle çalışabilirim.
+                  Antalya merkezli. Danışmanlık, proje bazlı çözüm ortaklığı ve
+                  dış kaynaklı AI yapılanması modelleriyle çalışabilirim.
                 </p>
               </div>
 
               <div className="mt-6 space-y-3">
-                <a className="contact-row" href={contactLinks.website} target="_blank" rel="noreferrer">
+                <a
+                  className="contact-row"
+                  href={contactLinks.website}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   aihotelstech.com
                   <ArrowUpRightIcon />
                 </a>
-                <a className="contact-row" href={contactLinks.email}>
-                  markokara@hotmail.com
+                <a
+                  className="contact-row"
+                  href={contactLinks.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  +90 554 431 51 94
                   <ArrowUpRightIcon />
                 </a>
-                <a className="contact-row" href={contactLinks.linkedin} target="_blank" rel="noreferrer">
+                <a
+                  className="contact-row"
+                  href={contactLinks.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   linkedin.com/in/murat-k-18086b99
                   <ArrowUpRightIcon />
                 </a>
@@ -234,11 +252,7 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading
-          eyebrow="Kısa Profil"
-          title="Ben kimim?"
-          description="Veri, CRM, operasyon ve AI katmanını birlikte okuyabilen; strateji ve uygulama tarafında aynı anda çalışabilen bir profesyonelim."
-        />
+        <SectionHeading eyebrow="Profil" title="Uzmanlık Alanları" />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
           {profileHighlights.map((item) => (
             <StaggerItem key={item.title}>
@@ -252,28 +266,7 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <Reveal className="proposal-card">
-          <SectionHeading
-            eyebrow="Çalışma Niyeti"
-            title="Papatya Dental ile klasik bir işe giriş modeli dışında da çalışabiliriz."
-            description="Benim için önemli olan unvandan çok ihtiyaç. Doğru modelle, kurumun gerçek problemlerine odaklanıp ölçülebilir bir AI dönüşümü kurabiliriz."
-          />
-          <div className="mt-8 rounded-[2rem] border border-[var(--line-strong)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(224,242,254,0.9))] p-7 shadow-[0_24px_60px_rgba(37,99,235,0.08)] sm:p-8">
-            <p className="max-w-4xl text-lg leading-8 text-[var(--text-strong)]">
-              İster danışmanlık, ister proje bazlı çözüm ortaklığı, ister dış
-              kaynaklı AI mimarisi modeliyle; Papatya Dental’in ihtiyaçları
-              doğrultusunda esnek bir çalışma yapısı kurabiliriz.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading
-          eyebrow="Seçilmiş Geçmiş"
-          title="Deneyimimin kısa özeti"
-          description="Tüm kariyer geçmişini listelemek yerine, bugünkü pozisyonumu açıklayan seçilmiş durakları görünür bırakıyorum."
-        />
+        <SectionHeading eyebrow="Profesyonel Geçmiş" title="Deneyim" />
         <Stagger className="mt-8 grid gap-4">
           {experienceItems.map((item) => (
             <StaggerItem key={`${item.company}-${item.role}`}>
@@ -281,7 +274,10 @@ export default function Page() {
                 <div className="experience-period">{item.period}</div>
                 <div>
                   <h3 className="card-title">
-                    {item.role} <span className="text-[var(--text-subtle)]">@ {item.company}</span>
+                    {item.role}{" "}
+                    <span className="text-[var(--text-subtle)]">
+                      @ {item.company}
+                    </span>
                   </h3>
                   <p className="card-copy mt-3">{item.description}</p>
                 </div>
@@ -292,11 +288,7 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading
-          eyebrow="Canlı Kanıtlar"
-          title="Ürettiğim işlerden seçilmiş örnekler"
-          description="Projelerimin ortak noktası; AI’ı doğrudan operasyonun içine yerleştirmek ve somut kullanım senaryosu üretmek."
-        />
+        <SectionHeading eyebrow="Projeler" title="Seçilmiş İşler" />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
           {proofCards.map((card) => (
             <StaggerItem key={card.title}>
@@ -320,11 +312,7 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <SectionHeading
-          eyebrow="Çalışma Modeli"
-          title="Nasıl katkı sağlayabilirim?"
-          description="İhtiyaca göre kapsamı değişebilir; ama temel yaklaşımım her zaman kurumun gerçek problemine uygun sistem kurmaktır."
-        />
+        <SectionHeading eyebrow="Çalışma Modelleri" title="Çalışma Biçimleri" />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
           {workModels.map((item) => (
             <StaggerItem key={item.title}>
@@ -337,39 +325,26 @@ export default function Page() {
         </Stagger>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20 pt-10 sm:px-8 lg:px-12">
-        <Reveal className="final-cta">
-          <div className="max-w-3xl">
-            <p className="section-eyebrow">İletişim</p>
-            <h2 className="section-title">
-              Eğer Papatya Dental için AI tarafında farklı bir çalışma modeli
-              düşünüyorsanız, bunu birlikte netleştirebiliriz.
-            </h2>
-            <p className="section-copy mt-5">
-              Benim için mesele sadece bir rol değil; doğru kapsam, doğru model ve
-              doğru problem üzerinden birlikte değer üretmek.
-            </p>
-          </div>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              className="cta-primary"
-              href={contactLinks.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-            >
-              WhatsApp ile görüşme başlat
-              <ArrowUpRightIcon />
-            </a>
-            <a
-              className="cta-secondary"
-              href={contactLinks.linkedin}
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn profilini aç
-              <ArrowUpRightIcon />
-            </a>
-          </div>
+      <section className="mx-auto max-w-7xl px-6 pb-20 pt-8 sm:px-8 lg:px-12">
+        <Reveal className="cta-strip">
+          <a
+            className="cta-primary"
+            href={contactLinks.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp ile iletişime geçin
+            <ArrowUpRightIcon />
+          </a>
+          <a
+            className="cta-secondary"
+            href={contactLinks.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn profilini açın
+            <ArrowUpRightIcon />
+          </a>
         </Reveal>
       </section>
     </main>

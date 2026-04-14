@@ -107,10 +107,12 @@ a {
 
 .profile-panel {
   border-radius: 2rem;
-  border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 249, 255, 0.94));
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background:
+    linear-gradient(180deg, rgba(38, 50, 69, 0.98), rgba(27, 37, 53, 0.98)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 249, 255, 0.94));
   padding: 1.5rem;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
 }
 
 .profile-photo-shell {
@@ -122,8 +124,18 @@ a {
   height: 220px;
   width: 220px;
   border-radius: 999px;
-  border: 8px solid rgba(255, 255, 255, 0.95);
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, 0.92);
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+}
+
+.profile-label {
+  margin: 0;
+  color: #93c5fd;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
 .section-eyebrow {
@@ -246,10 +258,18 @@ a {
   width: 100%;
   justify-content: space-between;
   border-radius: 1rem;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.06);
   padding: 0.92rem 1rem;
   font-size: 0.93rem;
+  color: #e2e8f0;
+}
+
+.cta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
