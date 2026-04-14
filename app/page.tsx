@@ -26,7 +26,8 @@ const expertiseAreas = [
 
 const collaborationPoints = [
   "AI danışmanlığı ve ihtiyaç analizi",
-  "n8n / HubSpot mimari kurulumu",
+  "CRM / HubSpot mimari kurulum ve entegrasyonları",
+  
   "Agentic RAG ve LLM implementation",
   "Misafir deneyimi ve iletişim otomasyonu",
 ];
@@ -59,6 +60,39 @@ const experienceItems = [
     company: "Levent Kimya",
     description:
       "Veri analitiği, forecast, kategori yönetimi, ticari pazarlama ve karar destek sistemleri tarafında çalıştım. Analitik bakışı iş sonuçlarıyla ve yönetsel kararlarla birleştirdim.",
+  },
+];
+
+const credentialsColumns = [
+  {
+    title: "Teknik Yetkinlikler",
+    items: [
+      "Agentic RAG, LLM ve AI asistan kurguları",
+      "Python, FastAPI, API ve webhook entegrasyonları",
+      "HubSpot, n8n ve CRM otomasyonları",
+      "Power BI, ETL, veri akışları ve raporlama sistemleri",
+      "Qdrant, vektör veritabanı ve bilgi katmanı tasarımı",
+    ],
+  },
+  {
+    title: "Yönetsel Yetkinlikler",
+    items: [
+      "CRM stratejisi ve dijital dönüşüm planlaması",
+      "Misafir deneyimi ve iletişim süreç tasarımı",
+      "Pazarlama, segmentasyon ve kampanya kurguları",
+      "Operasyonel süreç analizi ve otomasyon yaklaşımı",
+      "Turquality, sunum yönetimi ve karar destek bakışı",
+    ],
+  },
+  {
+    title: "Eğitim & Sertifikalar",
+    items: [
+      "MBA, İşletme Yönetimi",
+      "Fundamentals of Deep Learning - NVIDIA",
+      "Qdrant Essentials Certification",
+      "Google Generative AI Learning Path",
+      "DeepLearning.AI Prompt Engineering",
+    ],
   },
 ];
 
@@ -119,21 +153,19 @@ export default function Page() {
               </h1>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--text-soft)] sm:text-xl">
-                CRM, dijital dönüşüm, AI stratejisi, Agentic RAG ve LLM
-                implementation tarafında çalışan; problemi analiz edip sistemi
-                kurgulayan ve hayata geçiren bir AI architect ve AI engineer’ım.
+                15 yıllık CRM ve veri stratejisi tecrübemle; kurumların ihtiyaçlarını analiz eden, uçtan uca AI mimarisini kurgulayan ve otonom süreçleri hayata geçiren bir AI Architect & Strategy Lead'im.
               </p>
 
               <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--text-muted)]">
-                20 yıllık veri, CRM, pazarlama ve misafir deneyimi tecrübemi
-                bugün AIHotelsTech çatısı altında AI danışmanlığı, mimari kurulum
-                ve operasyonel otomasyon projelerine taşıyorum.
+                Danışmanlık | Proje Bazlı Çalışma | İş Birliği Modeli 
               </p>
 
               <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--text-subtle)]">
-                Data Strategy | Agentic RAG & LLM Implementation | Marketing |
-                Guest Experience | HubSpot | BI | Turquality | Founder of
-                AIHotelsTech
+                
+              </p>
+
+              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
+                Papatya Dental İçin İş Birliği Teklifi
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -174,30 +206,34 @@ export default function Page() {
               <div className="mt-6">
                 <p className="profile-label">Profil</p>
                 <h2 className="mt-2 font-display text-2xl font-semibold text-white">
-                  Founder of AIHotelsTech
+                  AI CONSULTANT 
+                  <br />
+                  AI ENGİNEER 
+                  <br /> CRM  <br />Digital Transformation
                 </h2>
               </div>
 
               <div className="mt-6 space-y-3 text-sm leading-7 text-slate-200">
                 <p>
-                  CRM, LLM, Agentic RAG, otomasyon, veri stratejisi ve misafir
+                  CRM, LLM, Agentic RAG, Otomasyon, Veri Stratejisi ve Misafir
                   deneyimi ekseninde çalışan bir AI danışmanı, AI mimarı ve AI
                   engineer.
                 </p>
                 <p>
-                  Antalya merkezli. Danışmanlık, proje bazlı çözüm ortaklığı ve
-                  dış kaynaklı AI yapılanması modelleriyle çalışabilirim.
+                  Danışmanlık, proje bazlı çözüm ortaklığı ve
+                  eğitim/dönüşüm programlarıyla kurumların AI destekli operasyonel
+                  dönüşüm yolculuğuna eşlik ediyorum.
                 </p>
               </div>
 
               <div className="mt-6 space-y-3">
                 <a
                   className="contact-row"
-                  href={contactLinks.website}
+                  href={contactLinks.linkedin}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  aihotelstech.com
+                  linkedin.com/in/murat-k-18086b99
                   <ArrowUpRightIcon />
                 </a>
                 <a
@@ -206,16 +242,16 @@ export default function Page() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +90 554 431 51 94
+                  +90 554 431 51 94 
                   <ArrowUpRightIcon />
                 </a>
                 <a
                   className="contact-row"
-                  href={contactLinks.linkedin}
+                  href={contactLinks.website}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  linkedin.com/in/murat-k-18086b99
+                  aihotelstech.com
                   <ArrowUpRightIcon />
                 </a>
               </div>
@@ -230,7 +266,7 @@ export default function Page() {
             <div className="max-w-3xl">
               <SectionHeading
                 eyebrow="Papatya Dental"
-                title="İş Birliği Çerçevesi"
+                title="İş Birliği Teklifi"
               />
               <p className="section-copy mt-5">
                 Papatya Dental tarafında kurulabilecek yapı; AI destekli
@@ -302,6 +338,33 @@ export default function Page() {
                   </h3>
                   <p className="card-copy mt-3">{item.description}</p>
                 </div>
+              </article>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
+        <SectionHeading
+          eyebrow="Yetkinlikler"
+          title="Teknik, Yönetsel ve Akademik Altyapı"
+        />
+        <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
+          {credentialsColumns.map((column) => (
+            <StaggerItem key={column.title}>
+              <article className="info-card h-full">
+                <h3 className="card-title">{column.title}</h3>
+                <ul className="mt-5 space-y-3">
+                  {column.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex gap-3 text-sm leading-7 text-[var(--text-soft)]"
+                    >
+                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[var(--accent-strong)]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </article>
             </StaggerItem>
           ))}
