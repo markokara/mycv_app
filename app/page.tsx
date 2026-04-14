@@ -1,83 +1,91 @@
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/reveal";
 
-const transformationAreas = [
+const profileHighlights = [
   {
-    title: "Lead ve Hasta İletişimi Otomasyonu",
+    title: "20 yıllık iş tecrübesi",
     description:
-      "WhatsApp, form ve sosyal medya temaslarını tek bir akışta toplayan; hız, tutarlılık ve ölçülebilir dönüşüm sağlayan AI destekli iletişim sistemi.",
-    points: [
-      "İlk temas, randevu yönlendirme ve geri dönüş süreçlerinde operasyonel yükün azalması",
-      "Potansiyel hastaların cevap bekleme süresinin kısalması",
-      "Segment bazlı takip ve yeniden temas kurgularının netleşmesi",
-    ],
+      "Veri analitiği, CRM, ticari pazarlama, müşteri deneyimi ve dijital dönüşüm tarafında farklı sektörlerde çalıştım.",
   },
   {
-    title: "n8n / HubSpot Süreç Mimarisi",
+    title: "AIHotelsTech kurucusu",
     description:
-      "Papatya Dental içindeki veri akışlarını, formları ve CRM süreçlerini tek merkezde toplayan, sürdürülebilir ve faturalandırılabilir bir otomasyon omurgası.",
-    points: [
-      "Lead kaynağından teklif takibine kadar uçtan uca entegrasyon",
-      "Tekrarlayan manuel operasyonların otomasyona devredilmesi",
-      "Yönetim için görünür ve geliştirilebilir bir AI operasyon altyapısı",
-    ],
+      "AIHotelsTech ile AI mimarisi, agentic sistemler, CRM otomasyonları ve veri odaklı deneyim kurguları geliştiriyorum.",
   },
   {
-    title: "Agentic RAG ile Hasta Deneyimi",
+    title: "AI architect + AI engineer",
     description:
-      "Sadece chatbot değil; kurum bilgisini kullanan, doğru cevap verebilen ve farklı senaryolarda yönlendirme yapabilen agentic bilgi katmanı.",
-    points: [
-      "Tedavi, süreç ve hizmet sorularında daha kontrollü bilgi aktarımı",
-      "Sık sorulan soruların markaya uygun bir sesle yanıtlanması",
-      "İçerik, bilgi tabanı ve operasyon ekipleri arasında ortak bir AI hafızası",
-    ],
+      "Strateji seviyesinde düşünebilen ama gerektiğinde sistemi kuran, entegrasyonu yapan ve üretime taşıyan taraftayım.",
+  },
+];
+
+const experienceItems = [
+  {
+    period: "2024 - Bugün",
+    role: "Founder & AI Architect",
+    company: "AIHotelsTech",
+    description:
+      "AI destekli misafir deneyimi, CRM otomasyonu, Agentic RAG ve operasyonel veri ürünleri geliştiriyorum.",
+  },
+  {
+    period: "2024 - Bugün",
+    role: "CRM & Dijital Dönüşüm Lideri",
+    company: "Long Beach Resorts",
+    description:
+      "CRM süreçleri, otomasyon altyapısı, AI asistan kurguları ve dijital iş akışları üzerine danışmanlık veriyorum.",
+  },
+  {
+    period: "2021 - 2024",
+    role: "CRM & Misafir Deneyimi Müdürü",
+    company: "AKKA Hotels",
+    description:
+      "HubSpot, veri tekilleştirme, anket otomasyonları, omnichannel iletişim ve deneyim haritalama projelerini yönettim.",
+  },
+  {
+    period: "2012 - 2021",
+    role: "Satış Analitiği & Ticari Pazarlama",
+    company: "Levent Kimya",
+    description:
+      "Veri, forecast, ticari pazarlama ve karar destek sistemleri tarafında analitik bakışı iş sonuçlarına bağladım.",
   },
 ];
 
 const proofCards = [
   {
     title: "Maris AI Asistanı",
-    subtitle: "WhatsApp & Instagram otonom çoklu ajan sistemi",
+    subtitle: "WhatsApp & Instagram çoklu ajan sistemi",
     description:
-      "Çok kanallı talepleri merkezi mantıkla yöneten, cevaplayan ve ilgili iş akışlarına bağlayan agent tabanlı asistan kurgusu.",
+      "Çok kanallı talepleri yöneten, cevaplayan ve operasyon akışlarına bağlanan otonom AI asistan kurgusu.",
   },
   {
     title: "AI Smart Map",
-    subtitle: "Navigasyon ve keşif deneyimi",
+    subtitle: "Navigasyon ve keşif uygulaması",
     description:
-      "Kullanıcıyı doğru içeriğe, lokasyona ve keşif akışına taşıyan dijital deneyim ürünü; bilgi mimarisi ile kullanım kolaylığını birleştirir.",
+      "Kullanıcıyı doğru deneyime, lokasyona ve bilgiye yönlendiren dijital keşif ürünü.",
   },
   {
     title: "Dinamik Veri Pipeline",
-    subtitle: "Power BI Data Lakehouse & ETL süreçleri",
+    subtitle: "Power BI Data Lakehouse & ETL",
     description:
-      "Farklı kaynaklardan gelen operasyonel veriyi temiz, izlenebilir ve raporlanabilir hâle getiren analitik omurga.",
+      "Farklı kaynaklardaki veriyi birleştirip izlenebilir, raporlanabilir ve karar alınabilir yapıya taşıyan analitik omurga.",
   },
 ];
 
-const technicalStrengths = [
-  "Fundamentals of Deep Learning – NVIDIA",
-  "Qdrant Essentials Certification",
-  "Python ve FastAPI ile üretim odaklı servis geliştirme",
-  "LLM, RAG ve agentic iş akışı tasarımı",
-  "HubSpot, n8n, API ve webhook otomasyonları",
-  "Power BI, ETL ve veri ürünleri düşüncesi",
-];
-
-const trustSignals = [
+const workModels = [
   {
-    label: "20 yıllık stratejik veri ve ticari süreç perspektifi",
-    detail:
-      "Veri analitiği, CRM, ticari pazarlama ve dijital süreç yönetimini yalnızca teknik değil, operasyonel değer tarafından okuyan bir geçmiş.",
+    title: "AI danışmanlığı",
+    description:
+      "İhtiyaç analizi, yol haritası, AI kullanım senaryoları ve önceliklendirme tarafında stratejik destek verebilirim.",
   },
   {
-    label: "Turizm ve deneyim tasarımında sahadan gelen tecrübe",
-    detail:
-      "Misafir deneyimi, CRM mimarisi, anket otomasyonu ve çok kanallı iletişim akışlarını gerçek operasyon içinde kurup yönettim.",
+    title: "Mimari kurulum",
+    description:
+      "n8n, HubSpot, API, agentic akışlar, RAG ve veri katmanını doğrudan kurgulayıp kurabilirim.",
   },
   {
-    label: "AI mimarisini iş hedeflerine bağlayan yaklaşım",
-    detail:
-      "Amacım demo üretmek değil; faturalandırılabilir, ölçülebilir ve ekibin benimseyebileceği AI sistemleri kurmak.",
+    title: "Esnek çalışma modeli",
+    description:
+      "Danışman, proje bazlı çözüm ortağı veya dış kaynaklı AI partner modeliyle çalışabilirim.",
   },
 ];
 
@@ -85,6 +93,7 @@ const contactLinks = {
   whatsapp: "https://wa.me/905544315194",
   linkedin: "https://linkedin.com/in/murat-k-18086b99",
   email: "mailto:markokara@hotmail.com",
+  website: "https://aihotelstech.com",
 };
 
 function ArrowUpRightIcon() {
@@ -128,159 +137,172 @@ export default function Page() {
       <div className="page-glow page-glow-right" />
       <div className="grid-overlay" />
 
-      <section className="mx-auto max-w-7xl px-6 pb-16 pt-6 sm:px-8 lg:px-12">
-        <Reveal className="surface-panel flex flex-col gap-10 px-6 py-6 sm:px-8 sm:py-8 lg:px-10">
-          <div className="flex flex-col gap-6 border-b border-[var(--line)] pb-8 lg:flex-row lg:items-start lg:justify-between">
+      <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 sm:px-8 lg:px-12">
+        <Reveal className="surface-panel px-6 py-6 sm:px-8 sm:py-8 lg:px-10">
+          <div className="grid gap-8 lg:grid-cols-[1.35fr_0.85fr]">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-3 rounded-full border border-[var(--line-strong)] bg-white/80 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--accent-strong)] shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
-                AI Solution Partner & Architect
+                AI Solution Partner / AI Architect / AI Engineer
               </div>
-              <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold tracking-[-0.04em] text-[var(--text-strong)] sm:text-5xl lg:text-7xl">
-                Papatya Dental İçin AI Destekli Operasyonel Dönüşüm Vizyonu
+              <h1 className="mt-6 font-display text-4xl font-semibold tracking-[-0.05em] text-[var(--text-strong)] sm:text-5xl lg:text-7xl">
+                Murat Kara
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-soft)] sm:text-xl">
-                20 Yıllık Stratejik Veri Tecrübesi, Otonom Yapay Zeka
-                Sistemleriyle Buluşuyor.
+              <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--text-soft)] sm:text-xl">
+                Papatya Dental için; AI danışmanlığı, AI mimarisi ve operasyonel
+                otomasyon tarafında dışarıdan stratejik çözüm ortağı olarak değer
+                üretebilirim.
               </p>
               <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--text-muted)]">
-                Murat Kara olarak hedefim klasik bir iş başvurusu sunmak değil;
-                Papatya Dental için dışarıdan çalışan, stratejik ve
-                faturalandırılabilir bir AI danışmanlık partneri gibi konumlanmak.
-                Odak noktam; müşteri yolculuğu, süreç mimarisi ve AI destekli
-                operasyon tasarımını tek çatı altında birleştirmek.
+                20 yıllık veri, CRM, ticari süreç ve dijital dönüşüm tecrübemi;
+                bugün AIHotelsTech çatısı altında AI architect ve AI engineer
+                bakışıyla birleştiriyorum. Bu sayfa bir klasik iş başvurusu değil;
+                kim olduğumu, ne ürettiğimi ve hangi çalışma modeliyle katkı
+                sağlayabileceğimi net anlatan kısa bir tanıtımdır.
               </p>
-            </div>
 
-            <div className="hero-aside max-w-md">
-              <div className="rounded-[2rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(240,249,255,0.92))] p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08)]">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--accent-faint)] text-xl font-bold text-[var(--accent-strong)]">
-                    MK
-                  </div>
-                  <div>
-                    <p className="text-sm uppercase tracking-[0.18em] text-[var(--text-subtle)]">
-                      Danışman Profili
-                    </p>
-                    <h2 className="mt-1 font-display text-2xl font-semibold text-[var(--text-strong)]">
-                      Murat Kara
-                    </h2>
-                  </div>
-                </div>
-                <div className="mt-6 space-y-3 text-sm leading-6 text-[var(--text-soft)]">
-                  <p>
-                    CRM, veri ürünleri, AI otomasyonları ve müşteri deneyimi
-                    süreçlerini iş hedeflerine bağlayan hibrit çözüm mimarı.
-                  </p>
-                  <p>
-                    Antalya merkezli. HubSpot, n8n, LLM, RAG ve operasyonel veri
-                    tasarımı ekseninde dış kaynaklı stratejik partnerlik modeli.
-                  </p>
-                </div>
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                  <a
-                    className="cta-primary"
-                    href={contactLinks.whatsapp}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Bu vizyonu konuşalım
-                    <ArrowUpRightIcon />
-                  </a>
-                  <a
-                    className="cta-secondary"
-                    href={contactLinks.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LinkedIn profili
-                    <ArrowUpRightIcon />
-                  </a>
-                </div>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  className="mt-4 inline-flex text-sm font-medium text-[var(--text-soft)] transition hover:text-[var(--accent-strong)]"
-                  href={contactLinks.email}
+                  className="cta-primary"
+                  href={contactLinks.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  markokara@hotmail.com
+                  WhatsApp ile iletişime geçin
+                  <ArrowUpRightIcon />
+                </a>
+                <a
+                  className="cta-secondary"
+                  href={contactLinks.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn profili
+                  <ArrowUpRightIcon />
                 </a>
               </div>
             </div>
-          </div>
 
-          <Stagger className="grid gap-4 lg:grid-cols-3">
-            {[
-              "Dışarıdan danışman / solution partner modeli",
-              "Abartısız, kurumsal ve güven veren AI teklif dili",
-              "CV değil; karar vericiye yönelik net proposal yapısı",
-            ].map((item) => (
-              <StaggerItem key={item}>
-                <div className="rounded-[1.6rem] border border-[var(--line)] bg-white/78 px-5 py-5 text-sm leading-6 text-[var(--text-soft)] shadow-[0_18px_40px_rgba(15,23,42,0.05)]">
-                  {item}
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
+            <aside className="profile-panel">
+              <div className="profile-photo-shell">
+                <Image
+                  src="/portrait-placeholder.svg"
+                  alt="Murat Kara portre alanı"
+                  width={260}
+                  height={260}
+                  className="profile-photo"
+                  priority
+                />
+              </div>
+
+              <div className="mt-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
+                  Profil
+                </p>
+                <h2 className="mt-2 font-display text-2xl font-semibold text-[var(--text-strong)]">
+                  Founder, AI danışmanı ve çözüm mimarı
+                </h2>
+              </div>
+
+              <div className="mt-6 space-y-3 text-sm leading-6 text-[var(--text-soft)]">
+                <p>
+                  AIHotelsTech kurucusuyum. CRM, LLM, Agentic RAG, otomasyon ve
+                  veri ürünleri ekseninde kurumlara çözüm geliştiriyorum.
+                </p>
+                <p>
+                  Antalya merkezliyim. Danışman, proje bazlı partner veya esnek
+                  dış kaynak modeliyle çalışabilirim.
+                </p>
+              </div>
+
+              <div className="mt-6 space-y-3">
+                <a className="contact-row" href={contactLinks.website} target="_blank" rel="noreferrer">
+                  aihotelstech.com
+                  <ArrowUpRightIcon />
+                </a>
+                <a className="contact-row" href={contactLinks.email}>
+                  markokara@hotmail.com
+                  <ArrowUpRightIcon />
+                </a>
+                <a className="contact-row" href={contactLinks.linkedin} target="_blank" rel="noreferrer">
+                  linkedin.com/in/murat-k-18086b99
+                  <ArrowUpRightIcon />
+                </a>
+              </div>
+            </aside>
+          </div>
         </Reveal>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
-        <Reveal className="proposal-card">
-          <SectionHeading
-            eyebrow="Stratejik Teklif"
-            title="Kod yazan biri değil, AI dönüşümünü kurum içine yerleştiren bir partner."
-            description="Bu bölüm, Papatya Dental için önerdiğim çalışma modelinin özünü anlatır: teknoloji seçimi, süreç mimarisi ve deneyim tasarımı tek paket hâlinde ilerler."
-          />
-          <div className="mt-8 rounded-[2rem] border border-[var(--line-strong)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(224,242,254,0.9))] p-7 shadow-[0_24px_60px_rgba(37,99,235,0.08)] sm:p-8">
-            <p className="max-w-4xl text-lg leading-8 text-[var(--text-strong)]">
-              Amacım sadece kod yazmak değil; Papatya Dental bünyesinde uçtan
-              uca AI mimarisini kurmak, n8n/HubSpot entegrasyonlarını
-              otonomlaştırmak ve misafir deneyimini Agentic RAG sistemleriyle
-              zirveye taşımaktır.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
         <SectionHeading
-          eyebrow="Operasyonel Dönüşüm Alanları"
-          title="Papatya Dental için öncelikli üç AI çalışma alanı"
-          description="İlk fazda önerdiğim yapı, kısa vadede görünür kazanım üreten ama orta vadede de kurumsal AI omurgasına dönüşebilen bir çerçeve sunar."
+          eyebrow="Kısa Profil"
+          title="Ben kimim?"
+          description="Veri, CRM, operasyon ve AI katmanını birlikte okuyabilen; strateji ve uygulama tarafında aynı anda çalışabilen bir profesyonelim."
         />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
-          {transformationAreas.map((area) => (
-            <StaggerItem key={area.title}>
+          {profileHighlights.map((item) => (
+            <StaggerItem key={item.title}>
               <article className="info-card h-full">
-                <h3 className="card-title">{area.title}</h3>
-                <p className="card-copy">{area.description}</p>
-                <ul className="mt-6 space-y-3">
-                  {area.points.map((point) => (
-                    <li
-                      key={point}
-                      className="flex gap-3 text-sm leading-6 text-[var(--text-soft)]"
-                    >
-                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[var(--accent-strong)]" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="card-title">{item.title}</h3>
+                <p className="card-copy">{item.description}</p>
               </article>
             </StaggerItem>
           ))}
         </Stagger>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
+        <Reveal className="proposal-card">
+          <SectionHeading
+            eyebrow="Çalışma Niyeti"
+            title="Papatya Dental ile klasik bir işe giriş modeli dışında da çalışabiliriz."
+            description="Benim için önemli olan unvandan çok ihtiyaç. Doğru modelle, kurumun gerçek problemlerine odaklanıp ölçülebilir bir AI dönüşümü kurabiliriz."
+          />
+          <div className="mt-8 rounded-[2rem] border border-[var(--line-strong)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(224,242,254,0.9))] p-7 shadow-[0_24px_60px_rgba(37,99,235,0.08)] sm:p-8">
+            <p className="max-w-4xl text-lg leading-8 text-[var(--text-strong)]">
+              İster danışmanlık, ister proje bazlı çözüm ortaklığı, ister dış
+              kaynaklı AI mimarisi modeliyle; Papatya Dental’in ihtiyaçları
+              doğrultusunda esnek bir çalışma yapısı kurabiliriz.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
+        <SectionHeading
+          eyebrow="Seçilmiş Geçmiş"
+          title="Deneyimimin kısa özeti"
+          description="Tüm kariyer geçmişini listelemek yerine, bugünkü pozisyonumu açıklayan seçilmiş durakları görünür bırakıyorum."
+        />
+        <Stagger className="mt-8 grid gap-4">
+          {experienceItems.map((item) => (
+            <StaggerItem key={`${item.company}-${item.role}`}>
+              <article className="experience-row">
+                <div className="experience-period">{item.period}</div>
+                <div>
+                  <h3 className="card-title">
+                    {item.role} <span className="text-[var(--text-subtle)]">@ {item.company}</span>
+                  </h3>
+                  <p className="card-copy mt-3">{item.description}</p>
+                </div>
+              </article>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="Canlı Kanıtlar"
-          title="Düşünce değil, uygulanmış sistemlerden gelen referanslar"
-          description="Buradaki örnekler, önerdiğim yaklaşımın yalnızca teorik değil; sahada denenmiş ve farklı bağlamlarda çalıştırılmış olduğunu gösterir."
+          title="Ürettiğim işlerden seçilmiş örnekler"
+          description="Projelerimin ortak noktası; AI’ı doğrudan operasyonun içine yerleştirmek ve somut kullanım senaryosu üretmek."
         />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
           {proofCards.map((card) => (
             <StaggerItem key={card.title}>
               <article className="info-card h-full">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
-                  Referans Proje
+                  Proje
                 </p>
                 <h3 className="mt-3 font-display text-2xl font-semibold tracking-[-0.03em] text-[var(--text-strong)]">
                   {card.title}
@@ -297,70 +319,18 @@ export default function Page() {
         </Stagger>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
-        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <Reveal className="surface-panel px-6 py-7 sm:px-8 sm:py-8">
-            <SectionHeading
-              eyebrow="Teknik Güç"
-              title="AI mimarisini taşıyacak teknik zemine sahibim"
-              description="Yetkinliklerimi araç listesi olarak değil; üretime çıkabilecek sistem kurma becerisi olarak konumluyorum."
-            />
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {technicalStrengths.map((item) => (
-                <div key={item} className="tag-card">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </Reveal>
-
-          <Reveal className="surface-panel px-6 py-7 sm:px-8 sm:py-8" delay={0.08}>
-            <p className="section-eyebrow">İletişim ve Erişim</p>
-            <h2 className="section-title">
-              Dış kaynaklı ama kurumla aynı hedefe hizalanmış çalışma modeli
-            </h2>
-            <div className="mt-7 space-y-4 text-sm leading-7 text-[var(--text-soft)]">
-              <p>
-                Antalya merkezli çalışıyorum. Gerektiğinde danışman, çözüm
-                mimarı veya fatura kesen AI partner şirket modeliyle
-                konumlanabilirim.
-              </p>
-              <p>
-                Papatya Dental için önceliğim; kısa sürede görünür değer üretmek,
-                sonra bu yapıyı sürdürülebilir AI operasyon modeline
-                dönüştürmektir.
-              </p>
-            </div>
-            <div className="mt-8 space-y-3 text-sm text-[var(--text-soft)]">
-              <a className="contact-row" href={contactLinks.whatsapp} target="_blank" rel="noreferrer">
-                WhatsApp üzerinden hızlı görüşme
-                <ArrowUpRightIcon />
-              </a>
-              <a className="contact-row" href={contactLinks.linkedin} target="_blank" rel="noreferrer">
-                LinkedIn üzerinden profesyonel profil
-                <ArrowUpRightIcon />
-              </a>
-              <a className="contact-row" href={contactLinks.email}>
-                E-posta ile doğrudan iletişim
-                <ArrowUpRightIcon />
-              </a>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-12">
         <SectionHeading
-          eyebrow="Güven Bölümü"
-          title="Geçmişten gelen güven, bugüne taşınan yeni beceri"
-          description="Bu sayfa bir CV değil; yine de karar vericinin görmek isteyeceği güven unsurlarını net biçimde görünür bırakır."
+          eyebrow="Çalışma Modeli"
+          title="Nasıl katkı sağlayabilirim?"
+          description="İhtiyaca göre kapsamı değişebilir; ama temel yaklaşımım her zaman kurumun gerçek problemine uygun sistem kurmaktır."
         />
         <Stagger className="mt-8 grid gap-5 lg:grid-cols-3">
-          {trustSignals.map((signal) => (
-            <StaggerItem key={signal.label}>
+          {workModels.map((item) => (
+            <StaggerItem key={item.title}>
               <article className="info-card h-full">
-                <h3 className="card-title">{signal.label}</h3>
-                <p className="card-copy mt-4">{signal.detail}</p>
+                <h3 className="card-title">{item.title}</h3>
+                <p className="card-copy">{item.description}</p>
               </article>
             </StaggerItem>
           ))}
@@ -370,15 +340,14 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 pb-20 pt-10 sm:px-8 lg:px-12">
         <Reveal className="final-cta">
           <div className="max-w-3xl">
-            <p className="section-eyebrow">Son Adım</p>
+            <p className="section-eyebrow">İletişim</p>
             <h2 className="section-title">
-              Eğer hedefiniz AI ile daha ölçülebilir, daha hızlı ve daha
-              kurumsal bir operasyon kurmaksa, bu vizyonu birlikte konuşabiliriz.
+              Eğer Papatya Dental için AI tarafında farklı bir çalışma modeli
+              düşünüyorsanız, bunu birlikte netleştirebiliriz.
             </h2>
             <p className="section-copy mt-5">
-              Papatya Dental için önerim; küçük ama etkili bir pilot ile başlamak
-              ve ardından CRM, otomasyon ve bilgi katmanını aşamalı biçimde
-              büyütmek.
+              Benim için mesele sadece bir rol değil; doğru kapsam, doğru model ve
+              doğru problem üzerinden birlikte değer üretmek.
             </p>
           </div>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -397,7 +366,7 @@ export default function Page() {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn profilini incele
+              LinkedIn profilini aç
               <ArrowUpRightIcon />
             </a>
           </div>
